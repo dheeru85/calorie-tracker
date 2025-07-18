@@ -11,7 +11,7 @@
     "message": "User registered with modified credentials",
     "details": {
       "message": "User created successfully",
-      "user_id": "15dff530-95f3-43e8-86d2-1eafd8dbdf21"
+      "user_id": "a5cb245f-44fe-4362-978a-1f431894c537"
     }
   },
   {
@@ -27,8 +27,8 @@
     "success": true,
     "message": "User profile retrieved successfully",
     "details": {
-      "username": "sarah_fitness_181631",
-      "email": "sarah.fitness.181631@example.com"
+      "username": "sarah_fitness_181733",
+      "email": "sarah.fitness.181733@example.com"
     }
   },
   {
@@ -62,60 +62,77 @@
     "success": true,
     "message": "Custom food created successfully",
     "details": {
-      "food_id": "50b75b33-df20-47bb-ac0e-4a502e788c4e",
+      "food_id": "a55a8e29-b649-47bf-b755-9d087a980605",
       "name": "Sarah's Protein Smoothie"
     }
   },
   {
     "test": "Diary Entry Creation",
-    "success": false,
-    "message": "HTTP 500",
-    "details": "{\"detail\":\"Error creating diary entry: cannot encode object: datetime.date(2025, 7, 18), of type: <class 'datetime.date'>\"}"
+    "success": true,
+    "message": "Diary entry created successfully",
+    "details": {
+      "entry_id": "8f0a2c41-cbe2-4ed9-ac61-13032b3bf03c",
+      "food_name": "Oatmeal with Berries"
+    }
   },
   {
     "test": "Diary Entries Retrieval",
-    "success": false,
-    "message": "HTTP 500",
-    "details": "{\"detail\":\"Error getting diary entries: cannot encode object: datetime.date(2025, 7, 18), of type: <class 'datetime.date'>\"}"
+    "success": true,
+    "message": "Retrieved 1 diary entries",
+    "details": {
+      "entries_count": 1
+    }
   },
   {
     "test": "Daily Nutrition Summary",
-    "success": false,
-    "message": "HTTP 500",
-    "details": "{\"detail\":\"Error getting daily summary: cannot encode object: datetime.date(2025, 7, 18), of type: <class 'datetime.date'>\"}"
+    "success": true,
+    "message": "Retrieved summary for 2025-07-18",
+    "details": {
+      "total_calories": 280.0,
+      "total_protein": 8.0
+    }
   },
   {
     "test": "Diary Entry Update",
-    "success": false,
-    "message": "No entry ID available from creation test",
-    "details": {}
+    "success": true,
+    "message": "Diary entry updated successfully",
+    "details": {
+      "entry_id": "8f0a2c41-cbe2-4ed9-ac61-13032b3bf03c",
+      "new_serving_size": 1.5
+    }
   },
   {
     "test": "Weight Logging",
-    "success": false,
-    "message": "HTTP 500",
-    "details": "{\"detail\":\"Error logging weight: cannot encode object: datetime.date(2025, 7, 18), of type: <class 'datetime.date'>\"}"
+    "success": true,
+    "message": "Weight logged successfully",
+    "details": {
+      "entry_id": "bdc75403-dce3-4710-a747-bc8352af86db",
+      "weight": 64.5
+    }
   },
   {
     "test": "Weight History",
     "success": true,
-    "message": "Retrieved 0 weight entries",
+    "message": "Retrieved 1 weight entries",
     "details": {
-      "entries_count": 0
+      "entries_count": 1
     }
   },
   {
     "test": "Popular Foods",
     "success": true,
-    "message": "Retrieved 0 popular foods",
+    "message": "Retrieved 1 popular foods",
     "details": {
-      "popular_count": 0
+      "popular_count": 1
     }
   },
   {
     "test": "Diary Entry Deletion",
-    "success": false,
-    "message": "No entry ID available from creation test",
-    "details": {}
+    "success": true,
+    "message": "Diary entry deleted successfully",
+    "details": {
+      "entry_id": "8f0a2c41-cbe2-4ed9-ac61-13032b3bf03c",
+      "message": "Diary entry deleted successfully"
+    }
   }
 ]
