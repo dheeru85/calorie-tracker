@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { diaryAPI } from '../utils/api';
 import { formatDate } from '../utils/helpers';
-import { Calendar, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Calendar, ChevronLeft, ChevronRight, Plus } from 'lucide-react';
 import MealCard from '../components/MealCard';
 import NutritionProgress from '../components/NutritionProgress';
 import LoadingSpinner from '../components/LoadingSpinner';
