@@ -8,6 +8,10 @@ from pymongo import MongoClient
 from models.user import UserInDB, TokenData
 import os
 import uuid
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Password hashing
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
