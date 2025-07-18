@@ -1,0 +1,101 @@
+[
+  {
+    "test": "Health Check",
+    "success": true,
+    "message": "API is healthy and responding",
+    "details": {}
+  },
+  {
+    "test": "User Registration",
+    "success": true,
+    "message": "User registered successfully",
+    "details": {
+      "message": "User created successfully",
+      "user_id": "41114544-5cf5-4e34-b614-08d96f7ed0f7"
+    }
+  },
+  {
+    "test": "User Login",
+    "success": false,
+    "message": "HTTP 500",
+    "details": "Internal Server Error"
+  },
+  {
+    "test": "Get Current User",
+    "success": false,
+    "message": "HTTP 401",
+    "details": "{\"detail\":\"Not authenticated\"}"
+  },
+  {
+    "test": "Update User Profile",
+    "success": false,
+    "message": "HTTP 401",
+    "details": "{\"detail\":\"Not authenticated\"}"
+  },
+  {
+    "test": "Food Search",
+    "success": false,
+    "message": "HTTP 401",
+    "details": "{\"detail\":\"Not authenticated\"}"
+  },
+  {
+    "test": "Food Details",
+    "success": false,
+    "message": "Could not search for foods to test details",
+    "details": {}
+  },
+  {
+    "test": "Custom Food Creation",
+    "success": false,
+    "message": "HTTP 401",
+    "details": "{\"detail\":\"Not authenticated\"}"
+  },
+  {
+    "test": "Diary Entry Creation",
+    "success": false,
+    "message": "HTTP 401",
+    "details": "{\"detail\":\"Not authenticated\"}"
+  },
+  {
+    "test": "Diary Entries Retrieval",
+    "success": false,
+    "message": "HTTP 401",
+    "details": "{\"detail\":\"Not authenticated\"}"
+  },
+  {
+    "test": "Daily Nutrition Summary",
+    "success": false,
+    "message": "HTTP 401",
+    "details": "{\"detail\":\"Not authenticated\"}"
+  },
+  {
+    "test": "Diary Entry Update",
+    "success": false,
+    "message": "No entry ID available from creation test",
+    "details": {}
+  },
+  {
+    "test": "Weight Logging",
+    "success": false,
+    "message": "HTTP 401",
+    "details": "{\"detail\":\"Not authenticated\"}"
+  },
+  {
+    "test": "Weight History",
+    "success": false,
+    "message": "HTTP 401",
+    "details": "{\"detail\":\"Not authenticated\"}"
+  },
+  {
+    "test": "Popular Foods",
+    "success": false,
+    "message": "HTTP 401",
+    "details": "{\"detail\":\"Not authenticated\"}"
+  },
+  {
+    "test": "Diary Entry Deletion",
+    "success": false,
+    "message": "No entry ID available from creation test",
+    "details": {}
+  }
+]
