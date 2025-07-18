@@ -30,7 +30,7 @@ async def create_diary_entry(
         diary_entry = {
             "entry_id": str(uuid.uuid4()),
             "user_id": current_user.user_id,
-            "date": entry_data.date,
+            "date": entry_data.date.isoformat(),  # Convert date to string
             "meal_type": entry_data.meal_type,
             "fdc_id": entry_data.fdc_id,
             "food_name": entry_data.food_name,
