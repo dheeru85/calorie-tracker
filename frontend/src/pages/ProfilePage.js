@@ -4,7 +4,6 @@ import { diaryAPI } from '../utils/api';
 import { useForm } from 'react-hook-form';
 import { User, Settings, Target, TrendingUp, Scale, Save, Edit3 } from 'lucide-react';
 import { calculateBMR, calculateTDEE, getCalorieGoal, formatWeight } from '../utils/helpers';
-import LoadingSpinner from '../components/LoadingSpinner';
 import toast from 'react-hot-toast';
 
 const ProfilePage = () => {
