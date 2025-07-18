@@ -64,7 +64,7 @@ async def get_diary_entries(
         query = {"user_id": current_user.user_id}
         
         if date_filter:
-            query["date"] = date_filter
+            query["date"] = date_filter.isoformat()  # Convert date to string for query
         
         if meal_type:
             query["meal_type"] = meal_type
