@@ -86,7 +86,7 @@ async def get_daily_summary(
     try:
         entries = list(db.diary_entries.find({
             "user_id": current_user.user_id,
-            "date": date
+            "date": date.isoformat()  # Convert date to string for query
         }))
         
         # Calculate totals
