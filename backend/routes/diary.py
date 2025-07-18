@@ -200,7 +200,7 @@ async def log_weight(
         weight_entry = {
             "entry_id": str(uuid.uuid4()),
             "user_id": current_user.user_id,
-            "date": weight_data.date,
+            "date": weight_data.date.isoformat(),  # Convert date to string
             "weight": weight_data.weight,
             "created_at": datetime.utcnow()
         }
