@@ -65,7 +65,6 @@ const DiaryPage = () => {
     if (!editingEntry) return;
 
     try {
-      const multiplier = editServingSize;
       const originalNutrition = editingEntry.nutrition;
       
       const updatedNutrition = {
