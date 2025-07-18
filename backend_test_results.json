@@ -8,65 +8,81 @@
   {
     "test": "User Registration",
     "success": true,
-    "message": "User registered successfully",
+    "message": "User registered with modified credentials",
     "details": {
       "message": "User created successfully",
-      "user_id": "41114544-5cf5-4e34-b614-08d96f7ed0f7"
+      "user_id": "15dff530-95f3-43e8-86d2-1eafd8dbdf21"
     }
   },
   {
     "test": "User Login",
-    "success": false,
-    "message": "HTTP 500",
-    "details": "Internal Server Error"
+    "success": true,
+    "message": "Login successful, token received",
+    "details": {
+      "token_type": "bearer"
+    }
   },
   {
     "test": "Get Current User",
-    "success": false,
-    "message": "HTTP 401",
-    "details": "{\"detail\":\"Not authenticated\"}"
+    "success": true,
+    "message": "User profile retrieved successfully",
+    "details": {
+      "username": "sarah_fitness_181631",
+      "email": "sarah.fitness.181631@example.com"
+    }
   },
   {
     "test": "Update User Profile",
-    "success": false,
-    "message": "HTTP 401",
-    "details": "{\"detail\":\"Not authenticated\"}"
+    "success": true,
+    "message": "Profile updated successfully",
+    "details": {
+      "target_calories": 2000,
+      "goal": "maintain"
+    }
   },
   {
     "test": "Food Search",
-    "success": false,
-    "message": "HTTP 401",
-    "details": "{\"detail\":\"Not authenticated\"}"
+    "success": true,
+    "message": "Found 5 foods, total hits: 26760",
+    "details": {
+      "sample_food": "APPLE"
+    }
   },
   {
     "test": "Food Details",
-    "success": false,
-    "message": "Could not search for foods to test details",
-    "details": {}
+    "success": true,
+    "message": "Retrieved details for FDC ID: 2012128",
+    "details": {
+      "description": "BANANA",
+      "calories": 312.0
+    }
   },
   {
     "test": "Custom Food Creation",
-    "success": false,
-    "message": "HTTP 401",
-    "details": "{\"detail\":\"Not authenticated\"}"
+    "success": true,
+    "message": "Custom food created successfully",
+    "details": {
+      "food_id": "50b75b33-df20-47bb-ac0e-4a502e788c4e",
+      "name": "Sarah's Protein Smoothie"
+    }
   },
   {
     "test": "Diary Entry Creation",
     "success": false,
-    "message": "HTTP 401",
-    "details": "{\"detail\":\"Not authenticated\"}"
+    "message": "HTTP 500",
+    "details": "{\"detail\":\"Error creating diary entry: cannot encode object: datetime.date(2025, 7, 18), of type: <class 'datetime.date'>\"}"
   },
   {
     "test": "Diary Entries Retrieval",
     "success": false,
-    "message": "HTTP 401",
-    "details": "{\"detail\":\"Not authenticated\"}"
+    "message": "HTTP 500",
+    "details": "{\"detail\":\"Error getting diary entries: cannot encode object: datetime.date(2025, 7, 18), of type: <class 'datetime.date'>\"}"
   },
   {
     "test": "Daily Nutrition Summary",
     "success": false,
-    "message": "HTTP 401",
-    "details": "{\"detail\":\"Not authenticated\"}"
+    "message": "HTTP 500",
+    "details": "{\"detail\":\"Error getting daily summary: cannot encode object: datetime.date(2025, 7, 18), of type: <class 'datetime.date'>\"}"
   },
   {
     "test": "Diary Entry Update",
@@ -77,20 +93,24 @@
   {
     "test": "Weight Logging",
     "success": false,
-    "message": "HTTP 401",
-    "details": "{\"detail\":\"Not authenticated\"}"
+    "message": "HTTP 500",
+    "details": "{\"detail\":\"Error logging weight: cannot encode object: datetime.date(2025, 7, 18), of type: <class 'datetime.date'>\"}"
   },
   {
     "test": "Weight History",
-    "success": false,
-    "message": "HTTP 401",
-    "details": "{\"detail\":\"Not authenticated\"}"
+    "success": true,
+    "message": "Retrieved 0 weight entries",
+    "details": {
+      "entries_count": 0
+    }
   },
   {
     "test": "Popular Foods",
-    "success": false,
-    "message": "HTTP 401",
-    "details": "{\"detail\":\"Not authenticated\"}"
+    "success": true,
+    "message": "Retrieved 0 popular foods",
+    "details": {
+      "popular_count": 0
+    }
   },
   {
     "test": "Diary Entry Deletion",
