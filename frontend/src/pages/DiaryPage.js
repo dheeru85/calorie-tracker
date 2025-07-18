@@ -15,8 +15,6 @@ const DiaryPage = () => {
   const [editingEntry, setEditingEntry] = useState(null);
   const [editServingSize, setEditServingSize] = useState(1);
 
-  const location = useLocation();
-
   useEffect(() => {
     fetchDailySummary();
   }, [selectedDate]);
